@@ -2,21 +2,43 @@
 <html>
 
 <head>
-    <title>Django Girls blog</title>
+    <title>Salman Asali</title>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?version=7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/b0a64d6687.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div class="page-header">
         {% if user.is_authenticated %}
-            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <a href="{% url 'post_new' %}" class="top-menu"> <span class="glyphicon glyphicon-leaf"></span></a>
         {% endif %}
-        <h1><a href="/">Django Girls Blog</a></h1>
+
+        <div class="navbar">
+            <a href="/"><i class="fas fa-home"></i></a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fas fa-bars"></i> </button>
+                <div class="dropdown-content">
+                    <a href="">CV</a>
+                    <a href="">Contact</a>
+                </div>
+            </div>
+        </div>
+
+
+        <h1><a href="/">Salman Asali</a></h1>
     </div>
+
+
     <div class="content container">
         <div class="row">
             <div class="col-md-8">
@@ -26,7 +48,15 @@
         </div>
     </div>
 
-
+    <div class="page-footer">
+        <div class="page-footerinner">
+            <a href="https://twitter.com/asalisalman"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/salman.asali"><i class="fab fa-facebook-f"></i></a>
+            <a href="www.linkedin.com/in/salman-asali"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto: sal-_-man@hotmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
 </body>
+
 
 </html>
