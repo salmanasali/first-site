@@ -91,6 +91,7 @@ h1, h2, h3, h4 {
     width: 100%;
     padding: 20px 20px 20px 40px;
     text-align: center;
+    
 }
 
 .page-footerinner a {
@@ -98,6 +99,7 @@ h1, h2, h3, h4 {
     color: #363434;
     font-size: 20px;
     padding: 0 5px;
+    text-decoration: none;
 }
 
 body {

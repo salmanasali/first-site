@@ -1,9 +1,12 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="page-edit">
     <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit"><span class="glyphicon glyphicon-ok"></span></button>
     </form>
+</div>
+    
 {% endblock %}
