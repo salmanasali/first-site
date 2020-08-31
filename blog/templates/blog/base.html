@@ -8,7 +8,7 @@
 
     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}?version=223">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}?version=333">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
             <div class="dropdown">
                 <button class="dropbtn"><i class="fas fa-bars"></i> </button>
                 <div class="dropdown-content">
-                    <a href="/">CV</a>
+                    <a href="{% url 'cv'%}">CV</a>
                     <a href="{% url 'contact' %}">Contact</a>
                 </div>
             </div>
