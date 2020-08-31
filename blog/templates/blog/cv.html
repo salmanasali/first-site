@@ -6,8 +6,9 @@
     </div>
     {% for cv in cvs %}
         
-        <div class="post">
-            <p>{{ cv.text|linebreaksbr }}</p>
-        </div>
+    <div class="post">
+        <h2><a>{{ cv.title }}</a></h2>
+        <p>{{ cv.text|linebreaksbr }}</p>
+    </div>
     {% endfor %}
 {% endblock %}
